@@ -13,12 +13,11 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
+    "description": "A marketplace for selling the stuff you don't need anymore.",
     "web": {
       "favicon": "./assets/favicon.png"
     }
