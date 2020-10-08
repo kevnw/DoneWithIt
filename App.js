@@ -5,6 +5,7 @@ import {
   Text,
   TouchableHighlight,
   Image,
+  Alert,
   SafeAreaView,
   Button,
 } from "react-native";
@@ -13,7 +14,13 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Text>Hello Kimberlyn!</Text>
-      <TouchableHighlight onPress={() => console.log("Image pressed!")}>
+      <TouchableHighlight
+        onPress={() =>
+          Alert.prompt("My title", "My message", (text) => {
+            console.log(text);
+          })
+        }
+      >
         <Image
           source={{
             width: 200,
